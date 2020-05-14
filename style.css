@@ -1,0 +1,114 @@
+body {background-color: #000;
+	cursor: pointer;
+  overflow: hidden;
+	font-family: 'Staatliches', cursive;
+  margin: 0; padding: 0;}
+
+.container {
+	background-color: rgba(0,0,0,.1);
+	width: 640px;
+	height: 360px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -320px;
+	margin-top: -180px;
+	-o-animation: bringup 2s linear reverse forwards;
+	-moz-animation: bringup 2s linear reverse forwards;
+	-webkit-animation: bringup 2s linear reverse forwards;
+	animation: bringup 2s linear reverse forwards;
+	overflow: hidden;
+	letter-spacing: 2px;
+}
+	
+@keyframes bringup {
+0% {background-color: rgba(0,88,0,.2);}
+100% {background-color: rgba(0,0,0,.1);}
+}
+
+.shrink {
+	position: absolute;
+	top: 35px;
+	left: 120px;
+	text-align: center;
+	font-size: 40px;
+	color: transparent;
+	-o-animation: shrink 1.5s linear forwards 2s;
+	-moz-animation: shrink 1.5s linear forwards 2s;
+	-webkit-animation: shrink 1.5s linear forwards 2s;
+	animation: shrink 1.5s linear forwards 2s;
+	}
+@keyframes shrink {
+0% {text-shadow: 0px 0px 80px #0f0;}
+
+
+100% {text-shadow: 1px 1px 1px #0f0;}
+}
+.eat, .sleep, .rave, .repeat {
+	position: absolute;
+	top: 100px;
+	left: 267px;
+	font-size: 30px;
+	color: transparent;
+	-o-animation: shrink 1.5s linear forwards 3s;
+	-moz-animation: shrink 1.5s linear forwards 3s;
+	-webkit-animation: shrink 1.5s linear forwards 3s;
+	animation: shrink 1.5s linear forwards 3s;
+	}
+.sleep {
+	top: 140px;
+	-o-animation: shrink 1.5s linear forwards 3.2s;
+	-moz-animation: shrink 1.5s linear forwards 3.2s;
+	-webkit-animation: shrink 1.5s linear forwards 3.2s;
+	animation: shrink 1.5s linear forwards 3.2s;
+	}
+.rave {
+	top: 180px;
+	-o-animation: shrink 1.5s linear forwards 3.4s;
+	-moz-animation: shrink 1.5s linear forwards 3.4s;
+	-webkit-animation: shrink 1.5s linear forwards 3.4s;
+	animation: shrink 1.5s linear forwards 3.4s;
+	}
+.repeat {
+	top: 220px;
+	-o-animation: shrink 1.5s linear forwards 3.6s;
+	-moz-animation: shrink 1.5s linear forwards 3.6s;
+	-webkit-animation: shrink 1.5s linear forwards 3.6s;
+	animation: shrink 1.5s linear forwards 3.6s;
+	}
+.eat {text-decoration: line-through;}
+.rave {text-decoration: line-through;}
+
+.rainbow {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/439415/146x263.png");
+  position: absolute;
+  top: 285px;
+  left: 218px;
+  color: transparent;
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -o-animation: appear 1.5s linear forwards 7s, roll 5s linear infinite;
+  -moz-animation: appear 1.5s linear forwards 7s, roll 5s linear infinite;
+  -webkit-animation: appear 1.5s linear forwards 7s, roll 5s linear infinite;
+  animation: appear 1.5s linear forwards 7s, roll 5s linear infinite;
+  z-index: 5;
+  font-size: 40px;
+  color: 60a;
+  opacity: 0;
+}
+
+@keyframes appear {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes roll {
+  0% {
+    background-position: right 0 top 0;
+  }
+  100% {
+    background-position: right 0 top -146px;
+  }
+}
